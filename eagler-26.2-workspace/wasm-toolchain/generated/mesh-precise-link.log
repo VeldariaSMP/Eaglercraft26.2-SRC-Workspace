@@ -1,0 +1,121 @@
+[standalone-teavm] requestedOptimization=FULL effectiveOptimization=FULL dependencyAnalysis=precise strict=true obfuscated=true
+INFO: Running TeaVM
+[standalone-teavm] phase=DEPENDENCY_ANALYSIS workItems=0
+[standalone-teavm] progress=68/0
+EAGLER_UNSUPPORTED_STRIP java.util.Date.toString (removed @UnsupportedOn)
+[standalone-teavm] phase=COMPILING workItems=1000
+[standalone-teavm] progress=0/1000
+[standalone-teavm] progress=100/1000
+[standalone-teavm] progress=200/1000
+[standalone-teavm] progress=300/1000
+[standalone-teavm] progress=400/1000
+[standalone-teavm] progress=500/1000
+[standalone-teavm] progress=600/1000
+[standalone-teavm] progress=700/1000
+[standalone-teavm] progress=800/1000
+[standalone-teavm] progress=900/1000
+[standalone-teavm] progress=1000/1000
+EAGLER_WASMGC_PHANTOM_ROOT org.joml.Quaternionf classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.block.entity.trialspawner.TrialSpawner classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.server.level.ServerLevel classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.block.entity.trialspawner.TrialSpawnerStateData classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.block.entity.vault.VaultConfig classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.block.entity.vault.VaultServerData classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.block.entity.vault.VaultSharedData classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT org.teavm.platform.PlatformClass classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT org.teavm.platform.PlatformObject classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT java.lang.Package classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT java.lang.Module classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT com.mojang.brigadier.StringReader classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT com.mojang.brigadier.context.CommandContext classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT com.mojang.brigadier.suggestion.SuggestionsBuilder classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT com.mojang.brigadier.arguments.StringArgumentType$StringType classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.commands.SharedSuggestionProvider classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.commands.arguments.GameProfileArgument$Result classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.commands.arguments.coordinates.Coordinates classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.commands.CommandBuildContext classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.commands.arguments.blocks.BlockInput classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.commands.arguments.blocks.BlockPredicateArgument$Result classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.commands.arguments.item.ItemInput classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.core.HolderLookup$Provider classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.commands.arguments.MessageArgument$Message classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.commands.arguments.OperationArgument$Operation classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.commands.arguments.AngleArgument$SingleAngle classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.commands.arguments.ScoreHolderArgument$Result classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.commands.arguments.item.FunctionArgument$Result classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.commands.arguments.EntityAnchorArgument$Anchor classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.commands.arguments.ResourceOrTagArgument$Result classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.commands.arguments.ResourceOrTagKeyArgument$Result classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.network.syncher.SynchedEntityData$Builder classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.player.PlayerModelPart classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.EntityEquipment classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.ai.Brain classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.ai.Brain$Packed classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.player.Player classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.Entity$RemovalReason classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.storage.ValueOutput classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.item.ItemEntity classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.storage.ValueInput classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.damagesource.DamageSource classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.LivingEntity$Fallsounds classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.damagesource.CombatTracker classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.InteractionHand classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.ai.attributes.AttributeInstance classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.ai.attributes.AttributeMap classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.InterpolationHandler classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.util.BlockUtil$FoundRectangle classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.SlotAccess classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.network.protocol.game.ClientboundAddEntityPacket classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.server.level.ServerPlayer classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.waypoints.Waypoint$Icon classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.storage.loot.LootParams classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.storage.loot.LootParams$Builder classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.network.protocol.game.VecDeltaCodec classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.MoverType classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.Entity$MovementEmission classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.Entity$Movement classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.InsideBlockEffectApplier$StepBasedCollector classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.phys.HitResult classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.InteractionResult classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.Entity$MoveFunction classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.phys.Vec2 classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.scores.PlayerTeam classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.scores.Team classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.LightningBolt classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.portal.TeleportTransition classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.PositionMoveRotation classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.Explosion classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.projectile.ProjectileDeflection classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.projectile.Projectile classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.sounds.SoundSource classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.commands.CommandSourceStack classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.network.protocol.Packet classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.server.level.ServerEntity classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.Leashable classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.entity.EntityInLevelCallback classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.damagesource.DamageSources classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.core.RegistryAccess classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.util.debug.DebugValueSource$Registration classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.item.slot.SlotCollection classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT java.lang.annotation.RetentionPolicy classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT java.lang.annotation.ElementType classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.item.context.BlockPlaceContext classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.phys.BlockHitResult classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT java.time.OffsetDateTime classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT com.mojang.datafixers.util.Either classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT com.mojang.datafixers.FamilyOptic classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.InsideBlockEffectApplier classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT com.google.common.reflect.TypeParameter classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT com.google.common.reflect.TypeToken$TypeSet classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT com.google.common.reflect.Invokable classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT com.google.common.reflect.TypeResolver classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT com.google.common.reflect.TypeToken$1 classReader=false parent=n/a
+EAGLER_SPLIT: SKIP net.minecraft.world.level.block.Blocks::<clinit> nodes=77451 stmts=4 (has 10 locals)
+EAGLER_SPLIT: SPLIT @teavm.initReflection nodes=25940 stmts=252 -> 3 sub-functions
+EAGLER_SPLIT: SKIP net.minecraft.sounds.SoundEvents::<clinit> nodes=33844 stmts=4 (has 2 locals)
+EAGLER_SPLIT: SKIP net.minecraft.world.item.Items::<clinit> nodes=52739 stmts=4 (has 14 locals)
+EAGLER_SPLIT: SKIP net.minecraft.world.entity.EntityTypes::<clinit> nodes=20451 stmts=4 (has 10 locals)
+EAGLER_SPLIT: SPLIT teavm@initializer nodes=178838 stmts=46588 -> 18 sub-functions
+INFO: Output file successfully built
+INFO: Classes compiled: 13336
+INFO: Methods compiled: 71632

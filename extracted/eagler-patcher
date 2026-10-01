@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+set -eu
+
+launcher_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+jar_path="$launcher_dir/eaglercraft-26.2-java-cli.jar"
+if [ ! -f "$jar_path" ]; then
+  jar_path="$launcher_dir/build/eaglercraft-26.2-java-cli.jar"
+fi
+if [ ! -f "$jar_path" ]; then
+  echo "ERROR: patcher JAR is missing beside the launcher" >&2
+  exit 2
+fi
+java_cmd=${EAGLER_PATCHER_JAVA:-java}
+exec "$java_cmd" -jar "$jar_path" "$@"

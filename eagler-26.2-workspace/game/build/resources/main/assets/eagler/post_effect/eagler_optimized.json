@@ -1,0 +1,45 @@
+{
+    "targets": {
+        "graded": {
+            "use_depth": false
+        }
+    },
+    "passes": [
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "eagler:post/eagler_optimized",
+            "inputs": [
+                {
+                    "sampler_name": "Scene",
+                    "target": "minecraft:main"
+                },
+                {
+                    "sampler_name": "SceneDepth",
+                    "target": "minecraft:main",
+                    "use_depth_buffer": true
+                }
+            ],
+            "output": "graded"
+        },
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "minecraft:post/blit",
+            "inputs": [
+                {
+                    "sampler_name": "In",
+                    "target": "graded"
+                }
+            ],
+            "uniforms": {
+                "BlitConfig": [
+                    {
+                        "name": "ColorModulate",
+                        "type": "vec4",
+                        "value": [ 1.0, 1.0, 1.0, 1.0 ]
+                    }
+                ]
+            },
+            "output": "minecraft:main"
+        }
+    ]
+}

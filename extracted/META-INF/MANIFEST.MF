@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Main-Class: com.eaglercraft.patcher.SingleFileLauncher
+Eagler-Distribution: release-packaging
+Eagler-Content-Profile: Normal
+Eagler-Official-Client-JAR: excluded
+Eagler-Notices: bundled
+Created-By: 25.0.3 (Ubuntu)
+
