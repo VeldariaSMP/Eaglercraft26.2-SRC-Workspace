@@ -144,7 +144,7 @@ public class LoadingOverlay extends Overlay {
       if (fadeOutAnim < 1.0F) {
          int progressPercent = Mth.clamp(Math.round(this.currentProgress * 100.0F), 0, 100);
          graphics.centeredText(this.minecraft.font, Component.translatableWithFallback("eagler.loading.reloading",
-            "Reloading resources... %s%%", progressPercent),
+            " ", progressPercent),
             width / 2, barY - 20, ARGB.white(1.0F - Mth.clamp(fadeOutAnim, 0.0F, 1.0F)));
          this.extractProgressBar(graphics, width / 2 - logoWidthHalf, barY - 5, width / 2 + logoWidthHalf, barY + 5, 1.0F - Mth.clamp(fadeOutAnim, 0.0F, 1.0F));
       }

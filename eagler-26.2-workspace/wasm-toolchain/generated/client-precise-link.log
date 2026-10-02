@@ -25,11 +25,13 @@ EAGLER_WASMGC_PHANTOM_ROOT java.lang.annotation.RetentionPolicy classReader=fals
 EAGLER_WASMGC_PHANTOM_ROOT java.lang.annotation.ElementType classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT java.io.ObjectOutputStream classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate$StructureBlockInfo classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.levelgen.DensityFunction$FunctionContext classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.levelgen.DensityFunction$ContextProvider classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.levelgen.DensityFunction$Visitor classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT java.io.ObjectOutput classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT java.io.ObjectInput classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT java.nio.file.WatchKey classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT java.nio.file.WatchService classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT java.nio.file.WatchEvent$Kind classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT java.nio.file.WatchEvent$Modifier classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT com.google.common.collect.DiscreteDomain classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT org.joml.AxisAngle4d classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT org.joml.Quaterniondc classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT org.joml.Matrix3dc classReader=false parent=n/a
@@ -38,18 +40,16 @@ EAGLER_WASMGC_PHANTOM_ROOT org.joml.Matrix4dc classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT org.joml.Quaterniond classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT org.joml.Matrix4d classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT org.joml.Matrix3d classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.floats.FloatPredicate classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.biome.Climate$TargetPoint classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT java.nio.file.WatchKey classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT java.nio.file.WatchService classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT java.nio.file.WatchEvent$Kind classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT java.nio.file.WatchEvent$Modifier classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT com.google.common.collect.DiscreteDomain classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.chunk.ChunkGeneratorStructureState classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.floats.FloatPredicate classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.levelgen.DensityFunction$FunctionContext classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.levelgen.DensityFunction$ContextProvider classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.levelgen.DensityFunction$Visitor classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.biome.Climate$TargetPoint classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT org.joml.Matrix4x3f classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.ints.IntUnaryOperator classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT java.util.LongSummaryStatistics classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT java.util.stream.IntStream$IntMapMultiConsumer classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.ints.IntUnaryOperator classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT java.util.stream.LongStream$LongMapMultiConsumer classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.ints.Int2ByteFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.Byte2IntFunction classReader=false parent=n/a
@@ -81,6 +81,8 @@ EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.chars.Char2ReferenceFunction cl
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.floats.Float2ReferenceFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.doubles.Double2ReferenceFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.objects.Reference2ReferenceFunction classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.client.multiplayer.chat.report.ReportEnvironment classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.client.multiplayer.chat.report.ReportingContext classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.ints.IntObjectBiConsumer classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.core.dispenser.BlockSource classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT org.joml.Vector2d classReader=false parent=n/a
@@ -101,8 +103,6 @@ EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.chunk.CarvingMask classRead
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.levelgen.carver.WorldCarver$CarveSkipChecker classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.levelgen.structure.pieces.StructurePieceSerializationContext classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT com.google.common.collect.ImmutableSetMultimap classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT com.google.common.base.Equivalence$Wrapper classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.doubles.DoubleUnaryOperator classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.Byte2LongFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.longs.Long2ShortFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.shorts.Short2LongFunction classReader=false parent=n/a
@@ -111,25 +111,26 @@ EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.chars.Char2LongFunction classRe
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.floats.Float2LongFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.longs.Long2DoubleFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.doubles.Double2LongFunction classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT com.google.common.base.Equivalence$Wrapper classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.doubles.DoubleUnaryOperator classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT com.mojang.serialization.Decoder$Terminal classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT com.mojang.serialization.Decoder$Boxed classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT com.mojang.serialization.Decoder$Simple classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.doubles.DoubleConsumer classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.doubles.DoublePredicate classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.material.FlowingFluid$SpreadContext classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.player.Player$BedSleepingProblem classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.biome.Climate$DistanceMetric classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.levelgen.blending.Blender classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.levelgen.NoiseChunk classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.NoiseColumn classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.item.crafting.PlacementInfo classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.player.Player$BedSleepingProblem classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.levelgen.structure.Structure$GenerationContext classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.biome.Climate$DistanceMetric classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.ClipBlockStateContext classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.item.crafting.PlacementInfo classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.server.jsonrpc.methods.IpBanlistService$IpBan classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.server.jsonrpc.methods.BanlistService$UserBan classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.ClipBlockStateContext classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.longs.LongPredicate classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT io.netty.util.concurrent.ProgressivePromise classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.booleans.Boolean2ByteFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.Byte2BooleanFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.booleans.Boolean2ShortFunction classReader=false parent=n/a
@@ -147,6 +148,7 @@ EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.doubles.Double2BooleanFunction 
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.booleans.Boolean2ObjectFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.booleans.Boolean2ReferenceFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.objects.Reference2BooleanFunction classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT io.netty.util.concurrent.ProgressivePromise classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.storage.PlayerDataStorage classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT io.netty.channel.ChannelProgressivePromise classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.levelgen.DensityFunctions$Spline$Point classReader=false parent=n/a
@@ -178,12 +180,11 @@ EAGLER_WASMGC_PHANTOM_ROOT io.netty.channel.kqueue.KQueueChannelConfig classRead
 EAGLER_WASMGC_PHANTOM_ROOT io.netty.util.internal.IntegerHolder classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.chunk.status.WorldGenContext classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.util.StaticCache2D classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT io.netty.buffer.SwappedByteBuf classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.BytePredicate classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT com.google.common.reflect.TypeParameter classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.ByteBinaryOperator classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.floats.FloatBinaryOperator classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.ByteUnaryOperator classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT io.netty.buffer.SwappedByteBuf classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.BytePredicate classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.objects.ObjectByteBiConsumer classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.longs.LongFloatBiConsumer classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.Byte2ByteFunction classReader=false parent=n/a
@@ -201,6 +202,7 @@ EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.floats.Float2CharFunction class
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.chars.Char2FloatFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.floats.Float2DoubleFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.doubles.Double2FloatFunction classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.ByteUnaryOperator classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.client.renderer.block.dispatch.VariantMutator classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.booleans.BooleanComparator classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.item.crafting.RecipeManager$ServerDisplayInfo classReader=false parent=n/a
@@ -218,14 +220,10 @@ EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.commands.execution.Frame classReader=fa
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.commands.execution.EntryAction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.commands.execution.ChainModifiers classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.objects.ObjectFloatBiConsumer classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT org.apache.commons.lang3.function.FailableBiConsumer classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT org.apache.commons.lang3.function.FailableBiFunction classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT org.apache.commons.io.function.IOIterator classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.shorts.ShortPredicate classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.shorts.ShortUnaryOperator classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream$1 classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.shorts.ShortSet classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.entity.ai.village.poi.PoiRecord classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.shorts.ShortSet classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.scores.PlayerTeam$Packed classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.scores.Objective$Packed classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.level.chunk.ProtoChunk classReader=false parent=n/a
@@ -244,7 +242,7 @@ EAGLER_WASMGC_PHANTOM_CATCH runtime-instanceof (non-native) for catch type java.
 EAGLER_SPLIT: SKIP net.minecraft.world.level.block.Blocks::<clinit> nodes=77451 stmts=4 (has 10 locals)
 EAGLER_SPLIT: SKIP net.minecraft.world.item.Items::<clinit> nodes=52739 stmts=4 (has 14 locals)
 EAGLER_SPLIT: SKIP net.minecraft.sounds.SoundEvents::<clinit> nodes=33844 stmts=4 (has 2 locals)
-EAGLER_SPLIT: SPLIT @teavm.initReflection nodes=1019427 stmts=18665 -> 101 sub-functions
+EAGLER_SPLIT: SPLIT @teavm.initReflection nodes=1002038 stmts=18334 -> 100 sub-functions
 EAGLER_SPLIT: SKIP net.minecraft.world.entity.EntityTypes::<clinit> nodes=20451 stmts=4 (has 10 locals)
 EAGLER_SPLIT: SKIP net.minecraft.client.animation.definitions.CopperGolemAnimation::<clinit> nodes=24543 stmts=4 (has 13 locals)
 EAGLER_SPLIT: SKIP net.minecraft.util.datafix.fixes.BlockStateData::bootstrap3_1 nodes=53457 stmts=4 (has 8 locals)
@@ -253,7 +251,7 @@ EAGLER_SPLIT: SKIP net.minecraft.util.datafix.fixes.BlockStateData::bootstrap6 n
 EAGLER_SPLIT: SKIP net.minecraft.util.datafix.fixes.BlockStateData::bootstrap8 nodes=48954 stmts=4 (has 9 locals)
 EAGLER_SPLIT: SKIP net.minecraft.util.datafix.fixes.BlockStateData::bootstrapA nodes=38198 stmts=4 (has 7 locals)
 EAGLER_SPLIT: SKIP net.minecraft.util.datafix.fixes.BlockStateData::bootstrapC nodes=24576 stmts=4 (has 8 locals)
-EAGLER_SPLIT: SPLIT teavm@initializer nodes=910273 stmts=261588 -> 91 sub-functions
+EAGLER_SPLIT: SPLIT teavm@initializer nodes=893050 stmts=256635 -> 89 sub-functions
 INFO: Output file successfully built
-INFO: Classes compiled: 35570
-INFO: Methods compiled: 202354
+INFO: Classes compiled: 34943
+INFO: Methods compiled: 198838

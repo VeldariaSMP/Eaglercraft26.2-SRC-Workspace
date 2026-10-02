@@ -202,3 +202,43 @@ EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.Byte2ByteFunction classRe
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.Byte2CharFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.chars.Char2ByteFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.Byte2FloatFunction classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.floats.Float2ByteFunction classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.Byte2DoubleFunction classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.doubles.Double2ByteFunction classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.objects.ObjectByteBiConsumer classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.floats.Float2CharFunction classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.chars.Char2FloatFunction classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.floats.Float2DoubleFunction classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.doubles.Double2FloatFunction classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.longs.LongFloatBiConsumer classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT java.util.function.DoubleBinaryOperator classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT com.google.common.hash.Funnel classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT io.netty.channel.socket.InternetProtocolFamily classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT io.netty.channel.socket.SocketProtocolFamily classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT java.nio.channels.ServerSocketChannel classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT io.netty.channel.socket.ServerSocketChannelConfig classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT io.netty.channel.epoll.LinuxSocket classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT io.netty.channel.epoll.EpollServerSocketChannelConfig classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT io.netty.channel.epoll.EpollChannelConfig classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT io.netty.channel.kqueue.BsdSocket classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT io.netty.channel.kqueue.KQueueServerSocketChannelConfig classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT io.netty.channel.kqueue.KQueueChannelConfig classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.gametest.framework.GameTestEntityBuilder classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.gametest.framework.GameTestMobBuilder classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT java.security.SignatureException classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_CATCH runtime-instanceof (non-native) for catch type java.security.SignatureException
+EAGLER_SPLIT: SPLIT @teavm.initReflection nodes=854331 stmts=14636 -> 85 sub-functions
+EAGLER_SPLIT: SKIP net.minecraft.world.item.Items::<clinit> nodes=52739 stmts=4 (has 14 locals)
+EAGLER_SPLIT: SKIP net.minecraft.world.level.block.Blocks::<clinit> nodes=77451 stmts=4 (has 10 locals)
+EAGLER_SPLIT: SKIP net.minecraft.sounds.SoundEvents::<clinit> nodes=33844 stmts=4 (has 2 locals)
+EAGLER_SPLIT: SKIP net.minecraft.world.entity.EntityTypes::<clinit> nodes=20451 stmts=4 (has 10 locals)
+EAGLER_SPLIT: SKIP net.minecraft.util.datafix.fixes.BlockStateData::bootstrap3_1 nodes=53457 stmts=4 (has 8 locals)
+EAGLER_SPLIT: SKIP net.minecraft.util.datafix.fixes.BlockStateData::bootstrap3_2 nodes=129242 stmts=4 (has 8 locals)
+EAGLER_SPLIT: SKIP net.minecraft.util.datafix.fixes.BlockStateData::bootstrap6 nodes=20091 stmts=4 (has 9 locals)
+EAGLER_SPLIT: SKIP net.minecraft.util.datafix.fixes.BlockStateData::bootstrap8 nodes=48954 stmts=4 (has 9 locals)
+EAGLER_SPLIT: SKIP net.minecraft.util.datafix.fixes.BlockStateData::bootstrapA nodes=38198 stmts=4 (has 7 locals)
+EAGLER_SPLIT: SKIP net.minecraft.util.datafix.fixes.BlockStateData::bootstrapC nodes=24576 stmts=4 (has 8 locals)
+EAGLER_SPLIT: SPLIT teavm@initializer nodes=756250 stmts=219056 -> 76 sub-functions
+INFO: Output file successfully built
+INFO: Classes compiled: 29685
+INFO: Methods compiled: 168855

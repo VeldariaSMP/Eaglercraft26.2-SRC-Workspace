@@ -2,7 +2,6 @@ package net.minecraft.client.gui.screens;
 
 import com.mojang.authlib.minecraft.BanDetails;
 import com.mojang.logging.LogUtils;
-import com.mojang.realmsclient.RealmsMainScreen;
 import java.io.IOException;
 import java.util.Objects;
 import net.minecraft.SharedConstants;
@@ -29,6 +28,7 @@ import net.minecraft.client.renderer.texture.TextureManager;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.ARGB;
 import net.minecraft.util.Mth;
@@ -44,6 +44,10 @@ public class TitleScreen extends Screen {
    private static final Component TITLE = Component.translatable("narrator.screen.title");
    private static final Component COPYRIGHT_TEXT = Component.translatable("title.credits");
    private static final String DEMO_LEVEL_ID = "Demo_World";
+
+   /** Friends アイコン（アセット名。無ければ CommonButtons と同じ命名空間の icon/* を確認） */
+   private static final Identifier FRIENDS_ICON = Identifier.withDefaultNamespace("friends/friends");
+
    private @Nullable SplashRenderer splash;
    private boolean fading;
    private long fadeInStart;
@@ -97,13 +101,26 @@ public class TitleScreen extends Screen {
          topPos = this.createNormalMenuOptions(topPos, spacing);
       }
 
-      // 下段: 言語 | Settings | Edit Profile | アクセシビリティ
+      // Icon row: Friends | Language | Accessibility
+      int numberOfButtons = 3;
+      int currentButton = 0;
       topPos += spacing;
       int iconSize = 20;
-      int midWidth = 98;
-      int gap = 4;
-      int totalWidth = iconSize + gap + midWidth + gap + midWidth + gap + iconSize;
-      int x = this.width / 2 - totalWidth / 2;
+
+      // Friends — 画像ボタン（クリックはまだ no-op）
+      SpriteIconButton friends = this.addRenderableWidget(
+         SpriteIconButton.builder(
+               Component.translatable("menu.online"), // ナレーション用。見た目はアイコン
+               btn -> {
+                  // no-op for now
+               },
+               true
+            )
+            .width(iconSize)
+            .sprite(FRIENDS_ICON, 15, 15)
+            .build()
+      );
+      friends.setPosition(this.getHorizontalPosition(++currentButton, numberOfButtons, iconSize), topPos);
 
       SpriteIconButton language = this.addRenderableWidget(
          CommonButtons.language(
@@ -114,36 +131,7 @@ public class TitleScreen extends Screen {
             true
          )
       );
-      language.setPosition(x, topPos);
-      x += iconSize + gap;
-
-      this.addRenderableWidget(
-         Button.builder(
-               Component.translatable("menu.options"),
-               btn -> this.minecraft.gui.setScreen(new OptionsScreen(this, this.minecraft.options, false))
-            )
-            .bounds(x, topPos, midWidth, 20)
-            .build()
-      );
-      x += midWidth + gap;
-
-      // Account = Eagler Edit Profile
-      if (!this.minecraft.isDemo()) {
-         this.addRenderableWidget(
-            Button.builder(
-                  Component.literal("Edit Profile"),
-                  btn -> this.minecraft.gui.setScreen(
-                     new net.lax1dude.eaglercraft.v1_8.profile.EaglerProfileScreen26(this)
-                  )
-               )
-               .bounds(x, topPos, midWidth, 20)
-               .build()
-         );
-      } else {
-         // デモ時は Profile の代わりに空白相当の余白を維持したくなければ
-         // midWidth 分スキップ
-      }
-      x += midWidth + gap;
+      language.setPosition(this.getHorizontalPosition(++currentButton, numberOfButtons, iconSize), topPos);
 
       SpriteIconButton accessibility = this.addRenderableWidget(
          CommonButtons.accessibility(
@@ -152,25 +140,26 @@ public class TitleScreen extends Screen {
             true
          )
       );
-      accessibility.setPosition(x, topPos);
+      accessibility.setPosition(this.getHorizontalPosition(++currentButton, numberOfButtons, iconSize), topPos);
 
-      // Quit / Credits（Eagler Hosted 時は Credits）
+      // Bottom: Options... | Edit Profile
       topPos += spacing;
-      boolean eaglerHosted = net.lax1dude.eaglercraft.v1_8.minecraft.EaglerHosted.isActive();
       this.addRenderableWidget(
          Button.builder(
-               eaglerHosted
-                  ? Component.translatableWithFallback("menu.credits", "Credits")
-                  : Component.translatable("menu.quit"),
-               btn -> {
-                  if (eaglerHosted) {
-                     this.minecraft.gui.setScreen(new EaglerCreditsScreen(this));
-                  } else {
-                     this.minecraft.stop();
-                  }
-               }
+               Component.translatable("menu.options"),
+               btn -> this.minecraft.gui.setScreen(new OptionsScreen(this, this.minecraft.options, false))
             )
-            .bounds(this.width / 2 - 100, topPos, 200, 20)
+            .bounds(this.width / 2 - 100, topPos, 98, 20)
+            .build()
+      );
+      this.addRenderableWidget(
+         Button.builder(
+               Component.literal("Edit Profile"),
+               btn -> this.minecraft.gui.setScreen(
+                  new net.lax1dude.eaglercraft.v1_8.profile.EaglerProfileScreen26(this)
+               )
+            )
+            .bounds(this.width / 2 + 2, topPos, 98, 20)
             .build()
       );
 
@@ -195,7 +184,7 @@ public class TitleScreen extends Screen {
          });
       } else if (!autoTestFired && net.lax1dude.eaglercraft.v1_8.internal.PlatformBootSignal.autoTestSp()) {
          autoTestFired = true;
-         net.minecraft.client.gui.screens.worldselection.CreateWorldScreen.openFresh(this.minecraft, () -> {});
+         CreateWorldScreen.openFresh(this.minecraft, () -> {});
       }
    }
 
@@ -225,9 +214,14 @@ public class TitleScreen extends Screen {
       return true;
    }
 
+   private int getHorizontalPosition(final int currentButton, final int numberOfButtons, final int buttonWidth) {
+      int totalWidth = numberOfButtons * buttonWidth + (numberOfButtons - 1) * 4;
+      return this.width / 2 - totalWidth / 2 + (currentButton - 1) * (buttonWidth + 4);
+   }
+
    private int createNormalMenuOptions(int topPos, final int spacing) {
       Button singleplayerButton = this.addRenderableWidget(
-         Button.builder(Component.translatable("menu.singleplayer"), var1 -> {
+         Button.builder(Component.translatable("menu.singleplayer"), btn -> {
                if (net.lax1dude.eaglercraft.v1_8.minecraft.EaglerHosted.isActive()) {
                   net.lax1dude.eaglercraft.v1_8.mesh.MeshWorkerRuntime.prewarm();
                   net.lax1dude.eaglercraft.v1_8.sp.SingleplayerServerController26.prewarmServerWorker();
@@ -251,7 +245,7 @@ public class TitleScreen extends Screen {
          this.addRenderableWidget(
             Button.builder(
                   Component.literal("TW"),
-                  var1 -> CreateWorldScreen.testWorld(this.minecraft, () -> this.minecraft.gui.setScreen(this))
+                  btn -> CreateWorldScreen.testWorld(this.minecraft, () -> this.minecraft.gui.setScreen(this))
                )
                .bounds(singleplayerButton.getX() + singleplayerButton.getWidth() + 2, topPos, 20, 20)
                .build()
@@ -260,9 +254,8 @@ public class TitleScreen extends Screen {
 
       Component multiplayerDisabledReason = this.getMultiplayerDisabledReason();
       boolean multiplayerAllowed = multiplayerDisabledReason == null;
-      Tooltip tooltip = multiplayerDisabledReason != null ? Tooltip.create(multiplayerDisabledReason) : null;
+      Tooltip mpTooltip = multiplayerDisabledReason != null ? Tooltip.create(multiplayerDisabledReason) : null;
 
-      // Multiplayer
       topPos += spacing;
       this.addRenderableWidget(
          Button.builder(Component.translatable("menu.multiplayer"), button -> {
@@ -275,21 +268,22 @@ public class TitleScreen extends Screen {
                this.minecraft.gui.setScreen(screen);
             })
             .bounds(this.width / 2 - 100, topPos, 200, 20)
-            .tooltip(tooltip)
+            .tooltip(mpTooltip)
             .build()
       ).active = multiplayerAllowed;
 
-      // Minecraft Realms（遷移のみ）
+      // Realms — no action, no beta tooltip
       topPos += spacing;
       this.addRenderableWidget(
          Button.builder(
                Component.translatable("menu.online"),
-               btn -> this.minecraft.gui.setScreen(new RealmsMainScreen(this))
+               btn -> {
+                  // no-op
+               }
             )
             .bounds(this.width / 2 - 100, topPos, 200, 20)
-            .tooltip(tooltip)
             .build()
-      ).active = multiplayerAllowed;
+      );
 
       return topPos;
    }
@@ -416,7 +410,7 @@ public class TitleScreen extends Screen {
             this.font,
             Component.translatableWithFallback(
                "eagler.menu.brand",
-               "DeltaClient 8.9",
+               "DeltaClient 8.9 Ultra",
                net.lax1dude.eaglercraft.v1_8.EaglercraftVersion.projectForkVersion
             ),
             2,
