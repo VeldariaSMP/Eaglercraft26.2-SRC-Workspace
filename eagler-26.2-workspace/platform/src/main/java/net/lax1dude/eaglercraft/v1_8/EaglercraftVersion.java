@@ -11,7 +11,7 @@ public class EaglercraftVersion {
 	
 	public static final String projectForkName = "EaglercraftX";
 	public static final String projectForkVersion = "26.2 u1"; // this fork = the 26.2 port (origin EaglercraftX is u53-based, see projectOriginVersion)
-	public static final String projectForkVendor = "o_xer"; // 26.2 port vendor (upstream: lax1dude)
+	public static final String projectForkVendor = "ShadowFlare Teams"; // 26.2 port vendor (upstream: lax1dude)
 	
 	public static final String projectForkURL = "https://gitlab.com/lax1dude/eaglercraftx-1.8";
 	

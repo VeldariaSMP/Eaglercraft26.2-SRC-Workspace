@@ -45,12 +45,12 @@ public class CreditsAndAttributionScreen extends Screen {
    public void extractRenderState(final GuiGraphicsExtractor graphics, final int mouseX, final int mouseY, final float a) {
       super.extractRenderState(graphics, mouseX, mouseY, a);
       if (net.lax1dude.eaglercraft.v1_8.minecraft.EaglerHosted.isActive()) {
-         graphics.centeredText(this.font, Component.translatableWithFallback("eagler.credits.brand", "Eaglercraft %s",
+         graphics.centeredText(this.font, Component.translatableWithFallback("eagler.credits.brand", "DeltaClient by ShadowFlare Teams",
                net.lax1dude.eaglercraft.v1_8.EaglercraftVersion.projectForkVersion), this.width / 2, 32, -1);
          graphics.centeredText(this.font, Component.translatableWithFallback("eagler.credits.basedOn",
-               "Based on the original EaglercraftX 1.8 workspace"),
+               ""),
                this.width / 2, 44, -6250336);
-         graphics.centeredText(this.font, Component.translatableWithFallback("eagler.credits.rewriteBy", "26.2 rewrite by %s",
+         graphics.centeredText(this.font, Component.translatableWithFallback("eagler.credits.rewriteBy", "",
                net.lax1dude.eaglercraft.v1_8.EaglercraftVersion.projectForkVendor), this.width / 2, 56, -6250336);
       }
    }

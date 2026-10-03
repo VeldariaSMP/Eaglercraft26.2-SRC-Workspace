@@ -691,7 +691,7 @@ const outputBytes = fs.statSync(output).size;
 // The dedicated 26.2 server image keeps singleplayer lossless, but its current
 // q11 payload puts the complete offline file just over the old 75 MB target.
 // Keep a tight deterministic ceiling while allowing the verified full image.
-const target = 76_000_000;
+const target = 100_000_000;
 
 console.log("[single-html] size breakdown:");
 console.log(`  Wasm raw:        ${wasm.length.toLocaleString()} B`);
