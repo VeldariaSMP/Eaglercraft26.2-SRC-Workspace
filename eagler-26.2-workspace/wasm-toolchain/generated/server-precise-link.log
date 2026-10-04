@@ -109,6 +109,8 @@ EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.waypoints.TrackedWaypoint$PitchDi
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.world.waypoints.TrackedWaypoint$Projector classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT com.mojang.datafixers.optics.Procompose classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.longs.LongBooleanBiConsumer classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT io.netty.util.concurrent.ProgressivePromise classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.server.level.progress.ChunkLoadStatusView classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.ints.Int2ByteFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.Byte2IntFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.Byte2ObjectFunction classReader=false parent=n/a
@@ -127,6 +129,7 @@ EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.doubles.Double2IntFunction clas
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.doubles.Double2ObjectFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.objects.Object2ReferenceFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.ints.Int2ReferenceFunction classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT com.google.common.collect.ImmutableSetMultimap classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.objects.Reference2ByteFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.Byte2ReferenceFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.objects.Reference2ShortFunction classReader=false parent=n/a
@@ -140,6 +143,7 @@ EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.floats.Float2ReferenceFunction 
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.objects.Reference2DoubleFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.doubles.Double2ReferenceFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.objects.Reference2ReferenceFunction classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT com.google.common.base.Equivalence$Wrapper classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.doubles.DoubleUnaryOperator classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT java.nio.file.WatchKey classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT java.nio.file.WatchService classReader=false parent=n/a
@@ -152,6 +156,8 @@ EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.chars.Char2LongFunction classRe
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.floats.Float2LongFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.longs.Long2DoubleFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.doubles.Double2LongFunction classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.longs.LongUnaryOperator classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.ByteBinaryOperator classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.booleans.Boolean2ByteFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.Byte2BooleanFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.booleans.Boolean2ShortFunction classReader=false parent=n/a
@@ -167,7 +173,9 @@ EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.doubles.Double2BooleanFunction 
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.booleans.Boolean2ObjectFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.booleans.Boolean2ReferenceFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.objects.Reference2BooleanFunction classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.longs.LongBinaryOperator classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.doubles.DoubleConsumer classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.floats.FloatBinaryOperator classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.shorts.Short2ByteFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.Byte2ShortFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.shorts.Short2ShortFunction classReader=false parent=n/a
@@ -177,22 +185,14 @@ EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.shorts.Short2FloatFunction clas
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.floats.Float2ShortFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.shorts.Short2DoubleFunction classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.doubles.Double2ShortFunction classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT com.mojang.brigadier.AmbiguityConsumer classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.booleans.BooleanComparator classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT com.mojang.datafixers.optics.profunctors.FunctorProfunctor classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT io.netty.util.concurrent.ProgressivePromise classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.server.level.progress.ChunkLoadStatusView classReader=false parent=n/a
+EAGLER_WASMGC_PHANTOM_ROOT java.text.AttributedCharacterIterator classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT com.mojang.serialization.Decoder$Terminal classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT com.mojang.serialization.Decoder$Boxed classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT com.mojang.serialization.Decoder$Simple classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT com.google.common.collect.ImmutableSetMultimap classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT com.google.common.base.Equivalence$Wrapper classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.doubles.DoublePredicate classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.longs.LongUnaryOperator classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.ByteBinaryOperator classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.longs.LongBinaryOperator classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.floats.FloatBinaryOperator classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT com.mojang.brigadier.AmbiguityConsumer classReader=false parent=n/a
-EAGLER_WASMGC_PHANTOM_ROOT java.text.AttributedCharacterIterator classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.floats.FloatUnaryOperator classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT java.util.stream.LongStream$LongMapMultiConsumer classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT it.unimi.dsi.fastutil.bytes.ByteUnaryOperator classReader=false parent=n/a
@@ -227,7 +227,7 @@ EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.gametest.framework.GameTestEntityBuilde
 EAGLER_WASMGC_PHANTOM_ROOT net.minecraft.gametest.framework.GameTestMobBuilder classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_ROOT java.security.SignatureException classReader=false parent=n/a
 EAGLER_WASMGC_PHANTOM_CATCH runtime-instanceof (non-native) for catch type java.security.SignatureException
-EAGLER_SPLIT: SPLIT @teavm.initReflection nodes=854331 stmts=14636 -> 84 sub-functions
+EAGLER_SPLIT: SPLIT @teavm.initReflection nodes=854331 stmts=14636 -> 85 sub-functions
 EAGLER_SPLIT: SKIP net.minecraft.world.item.Items::<clinit> nodes=52739 stmts=4 (has 14 locals)
 EAGLER_SPLIT: SKIP net.minecraft.world.level.block.Blocks::<clinit> nodes=77451 stmts=4 (has 10 locals)
 EAGLER_SPLIT: SKIP net.minecraft.sounds.SoundEvents::<clinit> nodes=33844 stmts=4 (has 2 locals)

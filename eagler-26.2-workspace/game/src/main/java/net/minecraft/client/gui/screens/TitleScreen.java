@@ -46,7 +46,7 @@ public class TitleScreen extends Screen {
    private static final String DEMO_LEVEL_ID = "Demo_World";
 
    /** Friends アイコン（アセット名。無ければ CommonButtons と同じ命名空間の icon/* を確認） */
-   private static final Identifier FRIENDS_ICON = Identifier.withDefaultNamespace("friends/friends");
+   private static final Identifier FRIENDS_ICON = Identifier.withDefaultNamespace("icon/friends");
 
    private @Nullable SplashRenderer splash;
    private boolean fading;
